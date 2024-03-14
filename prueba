@@ -1,0 +1,101 @@
+@media (min-width: 768px) {
+    .grilla-personajes {
+        justify-content: space-between;
+    }
+
+    .personaje-section {
+        width: 48%; 
+    }
+}
+
+/* Personajes */
+/* Rivalidades */
+
+
+/* Estilos para pantallas más pequeñas (menos de 768px) */
+
+@media (max-width: 767px) {
+    .main-rivalidades-grilla section {
+        width: 100%; /* Una columna en pantallas más pequeñas */
+        box-sizing: border-box;
+        margin-bottom: 20px; /* Espacio entre las secciones */
+    }
+}
+
+/* Rivalidades */
+
+@media (min-width: 768px) {
+    .main-rivalidades-grilla {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .main-rivalidades-grilla section {
+        width: 48%; /* Dos columnas en pantallas más grandes */
+        box-sizing: border-box;
+    }
+}
+
+/* Rivalidades */
+/* Dojos */
+
+@media (max-width: 767px) {
+    .main-dojos {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .main-dojos section {
+      width: 90%;
+      max-width: 1250px; /* Ancho máximo en la vista móvil */
+    }
+  }
+
+/* Dojos */
+/* Torneo */
+
+@media (max-width: 767px) {
+    .main-all-valley {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-all-valley,
+    .videos,
+    .div-torneo {
+        width: 90%;
+        margin-bottom: 15px;
+    }
+
+    .campeones-all-valley li {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+/* Torneo */
+/* Index */
+@media (max-width: 767px) {
+    .img-principal-index img {
+      width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+      height: auto; /* Ajusta la altura de la imagen automáticamente */
+      overflow: hidden; /* Aplica overflow hidden */
+    }
+  }
+
+  @media (max-width: 767px) {
+    .grilla {
+      display: block; /* Cambiar a disposición de bloque en vista móvil */
+    }
+  
+    .grilla header,
+    .grilla section,
+    .grilla article,
+    .grilla aside {
+      width: 100%; 
+      margin-bottom: 5px; 
+    }
+  }
+/* Index */

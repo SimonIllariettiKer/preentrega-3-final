@@ -1,0 +1,54 @@
+@keyframes cobra-eagle{
+    0%{
+        background-color: black;
+        color: yellow;
+        border: yellow solid 4px;
+    }
+    50%{
+        background-color: red;
+        color: black;
+        border: black solid 4px;
+    }
+    100%{
+        background-color: black;
+        color: yellow;
+        border: yellow solid 4px; 
+    }
+}
+
+@keyframes miyagi-cobra{
+    0%{
+        background-color: white;
+        color: orange;
+        border: orange solid 4px;
+    }
+    50%{
+        background-color: black;
+        color: yellow;
+        border: yellow solid 4px; 
+    }
+    100%{
+        background-color: white;
+        color: orange;
+        border: orange solid 4px; 
+    }
+}
+
+@keyframes cobra-miyagi{
+    0%{
+        background-color: black;
+        color: yellow;
+        border: yellow solid 4px; 
+    }
+    50%{
+        background-color: white;
+        color: orange;
+        border: orange solid 4px; 
+    }
+    100%{
+        background-color: black;
+        color: yellow;
+        border: yellow solid 4px; 
+    }
+}
+

@@ -1,0 +1,165 @@
+.header-all-valley {
+    .h1 {
+        color: white;
+        margin: 50px 0 50px 0;
+        text-align: center;
+    }
+
+    .img-all-valley {
+        // border: red solid 5px;
+        background-color: #000000c4;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        img {
+            width: 500px;
+            height: 250px;
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+
+        p {
+            color: white;
+            font-size: 20px;
+        }
+    }
+}
+
+.main-all-valley {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    margin-top: 75px;
+    margin-bottom: 75px;
+    height: 200px;
+    margin: 15px;
+
+    .videos {
+        background-color: #000000c4;
+        height: 175px;
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+
+        video {
+            width: 200px;
+            height: 150px;
+            margin: 20px;
+        }
+    }
+
+    img {
+        border: 10px red solid;
+        height: 100px;
+        width: 200px;
+    }
+}
+
+.div-torneo {
+    display: flex;
+    justify-content: center;
+}
+
+.campeones-all-valley {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    flex-wrap: wrap;
+
+    .ul-torneo {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        h2 {
+            font-family: 'barak';
+            color: white;
+            text-align: center;
+            margin-top: 25px;
+            margin-bottom: 25px;
+
+            &:hover {
+                font-size: 50px;
+            }
+        }
+
+        .li-cobra-kai {
+            background-color: black;
+            border: 4px solid yellow;
+            width: 1100px;
+            color: yellow;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            margin: 20px;
+    
+            h3{
+                font-family: "barak";
+                margin-left: 15px;
+                margin-right: 310px;
+            }
+
+            img {
+                width: 100px;
+                height: 100px;
+                margin-right: 15px;
+                margin-left: 310px;
+            }
+        }
+
+        .li-miyagi-do {
+            background-color: white;
+            border: 4px solid orange;
+            color: orange;
+            width: 1100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            margin: 20px;
+            h3{
+                font-family: "barak";
+                margin-left: 15px;
+                margin-right: 310px;
+            }
+
+            img {
+                width: 100px;
+                height: 100px;
+                margin-right: 15px;
+                margin-left: 310px;
+            }
+        }
+
+        .li-xander {
+            background-color: blue;
+            border: 4px solid red;
+            width: 1100px;
+            color: red;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            margin: 20px;
+            h3{
+                font-family: "barak";
+                margin-left: 15px;
+                margin-right: 310px;
+            }
+
+            img {
+                width: 100px;
+                height: 100px;
+                margin-right: 15px;
+                margin-left: 310px;
+            }
+        }
+    }
+}
