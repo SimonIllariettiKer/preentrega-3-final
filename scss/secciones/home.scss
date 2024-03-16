@@ -103,7 +103,7 @@ body {
 
 // MEDIA QUERY - MOBILE LAST
 
-@media (max-width:600px) {
+@media only screen and (max-width: 600px) {
     .sec-main {
         display: flex;
         justify-content: center;
@@ -111,71 +111,30 @@ body {
         margin-top: 100px;
         margin-bottom: 100px;
         border: red solid 9px;
+    }
 
-        .main-index {
-            margin: 20px;
-            padding: 0 0 0 0;
-            justify-content: center;
-            width: 100vw;
-            height: 1000px;
-            display: flex;
-            align-items: center;
-            border:white 9px solid;
+    .main-index {
+        margin: 20px;
+        padding: 0 0 0 0;
+        justify-content: center;
+        width: 100vw;
+        height: auto;
+        display: flex;
+        align-items: center;
+        border: white 9px solid;
+    }
 
-            .grilla {
-                display: grid;
-                justify-content: center;
-                align-items: center;
-                grid-template-columns: repeat(2, 50%);
-                grid-template-rows: repeat(4, 1fr);
-                height: 2fr;
-                width: 800px;
-                grid-template-areas:
-                    "header header"
-                    "section section"
-                    "article article"
-                    "aside aside";
+    .grilla {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(4, auto);
+        height: auto;
+        width: 100%;
+    }
 
-                header {
-                    grid-area: header;
-                    width: 600px;
-
-                    img {
-                        width: 300px;
-                        height: 200px;
-                    }
-                }
-
-                section {
-                    grid-area: section;
-                    width: 300px;
-
-                    img {
-                        width: 300px;
-                        height: 200px;
-                    }
-                }
-
-                article {
-                    grid-area: article;
-                    width: 300px;
-
-                    img {
-                        width: 300px;
-                        height: 200px;
-                    }
-                }
-
-                aside {
-                    grid-area: aside;
-                    width: 600px;
-
-                    img {
-                        width: 300px;
-                        height: 200px;
-                    }
-                }
-            }
-        }
+    .grilla > * {
+        width: 100%;
     }
 }
