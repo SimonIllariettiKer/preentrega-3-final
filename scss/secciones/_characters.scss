@@ -132,3 +132,15 @@
     padding: 15px;
     animation: cobra-miyagi infinite 9s;
  }
+
+ @media (min-width: 768px) {
+    .grilla-personajes {
+        justify-content: space-between;
+    }
+
+    .personaje-section {
+        width: 48%; 
+    }
+}
+
+/* Personajes */

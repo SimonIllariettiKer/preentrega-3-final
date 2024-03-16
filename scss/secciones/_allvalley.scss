@@ -218,3 +218,22 @@
         }
     }
 }
+
+@media (max-width: 767px) {
+    .main-all-valley {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-all-valley,
+    .videos,
+    .div-torneo {
+        width: 90%;
+        margin-bottom: 15px;
+    }
+
+    .campeones-all-valley li {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}

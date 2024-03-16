@@ -26,3 +26,10 @@
         }
     }
 }
+@media (max-width: 767px) {
+    .main-rivalidades-grilla section {
+        width: 100%; /* Una columna en pantallas más pequeñas */
+        box-sizing: border-box;
+        margin-bottom: 20px; /* Espacio entre las secciones */
+    }
+}

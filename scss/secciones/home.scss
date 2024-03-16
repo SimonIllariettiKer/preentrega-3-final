@@ -103,38 +103,10 @@ body {
 
 // MEDIA QUERY - MOBILE LAST
 
-@media only screen and (max-width: 600px) {
-    .sec-main {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 100px;
-        margin-bottom: 100px;
-        border: red solid 9px;
-    }
-
-    .main-index {
-        margin: 20px;
-        padding: 0 0 0 0;
-        justify-content: center;
-        width: 100vw;
-        height: auto;
-        display: flex;
-        align-items: center;
-        border: white 9px solid;
-    }
-
-    .grilla {
-        display: grid;
-        justify-content: center;
-        align-items: center;
-        grid-template-columns: 100%;
-        grid-template-rows: repeat(4, auto);
-        height: auto;
-        width: 100%;
-    }
-
-    .grilla > * {
-        width: 100%;
+@media (max-width: 767px) {
+    .img-principal-index img {
+      width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+      height: auto; /* Ajusta la altura de la imagen automáticamente */
+      overflow: hidden; /* Aplica overflow hidden */
     }
 }

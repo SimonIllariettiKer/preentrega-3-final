@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   src: url(../recursos-img/BELARAK.ttf);
   font-family: "barak"; }
@@ -157,33 +158,14 @@ body {
             width: 560px;
             height: 200px; }
 
-@media only screen and (max-width: 600px) {
-  .sec-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    border: red solid 9px; }
-  .main-index {
-    margin: 20px;
-    padding: 0 0 0 0;
-    justify-content: center;
-    width: 100vw;
+@media (max-width: 767px) {
+  .img-principal-index img {
+    width: 100%;
+    /* Ajusta el ancho de la imagen al 100% del contenedor */
     height: auto;
-    display: flex;
-    align-items: center;
-    border: white 9px solid; }
-  .grilla {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(4, auto);
-    height: auto;
-    width: 100%; }
-  .grilla > * {
-    width: 100%; } }
+    /* Ajusta la altura de la imagen automáticamente */
+    overflow: hidden;
+    /* Aplica overflow hidden */ } }
 
 .header-all-valley .navbar {
   height: 110px;
@@ -347,6 +329,19 @@ body {
         margin-right: 15px;
         margin-left: 310px; }
 
+@media (max-width: 767px) {
+  .main-all-valley {
+    flex-direction: column;
+    align-items: center; }
+  .img-all-valley,
+  .videos,
+  .div-torneo {
+    width: 90%;
+    margin-bottom: 15px; }
+  .campeones-all-valley li {
+    width: 100%;
+    margin-bottom: 15px; } }
+
 .h1 {
   color: white;
   margin: 50px 0 50px 0;
@@ -460,6 +455,13 @@ body {
   padding: 15px;
   animation: cobra-miyagi infinite 9s; }
 
+@media (min-width: 768px) {
+  .grilla-personajes {
+    justify-content: space-between; }
+  .personaje-section {
+    width: 48%; } }
+
+/* Personajes */
 .main-dojos {
   display: flex;
   flex-wrap: wrap;
@@ -530,7 +532,16 @@ body {
     .main-dojos .section-eagle-fang-dojo li {
       list-style: none; }
 
-/* Rivalidades */
+@media (max-width: 767px) {
+  .main-dojos {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .main-dojos section {
+    width: 90%;
+    max-width: 1250px;
+    /* Ancho máximo en la vista móvil */ } }
+
 .main-rivalidades {
   max-width: 800px;
   margin: 0 auto;
@@ -552,6 +563,14 @@ body {
       /* Centra la imagen */ }
     .main-rivalidades .main-rivalidades-grilla section h4 {
       color: white; }
+
+@media (max-width: 767px) {
+  .main-rivalidades-grilla section {
+    width: 100%;
+    /* Una columna en pantallas más pequeñas */
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    /* Espacio entre las secciones */ } }
 
 footer {
   background-color: #deb308;
