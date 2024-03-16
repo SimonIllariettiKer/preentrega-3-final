@@ -108,8 +108,11 @@ body {
       height: 600px;
       overflow: hidden;
       margin-top: 100px; }
-      body .header-index .img-principal-index imagen-suplente {
-        display: none; }
+      body .header-index .img-principal-index .img-suplente {
+        width: 80%;
+        height: 600px;
+        overflow: hidden;
+        margin-top: 100px; }
   body .sec-main {
     display: flex;
     justify-content: center;
@@ -160,16 +163,9 @@ body {
             width: 560px;
             height: 200px; }
 
-@media (max-width: 767px) {
-  .img-principal-index img {
-    display: none; }
-    .img-principal-index img .img-suplente {
-      width: 100%;
-      /* Ajusta el ancho de la imagen al 100% del contenedor */
-      height: auto;
-      /* Ajusta la altura de la imagen automáticamente */
-      overflow: hidden;
-      /* Aplica overflow hidden */ } }
+@media (max-width: 600px) {
+  .imagen-principal {
+    display: none; } }
 
 .header-all-valley .navbar {
   height: 110px;

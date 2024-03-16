@@ -25,8 +25,12 @@ body {
             overflow: hidden;
             margin-top: 100px;
 
-            imagen-suplente {
-                display: none;
+            .img-suplente {
+                width: 80%;
+                height: 600px;
+                overflow: hidden;
+                margin-top: 100px;
+                // display: none;
             }
         }
     }
@@ -105,19 +109,11 @@ body {
     }
 }
 
+
 // MEDIA QUERY - MOBILE LAST
 
-@media (max-width: 767px) {
-    .img-principal-index img {
-        display: none;
-
-        .img-suplente {
-            width: 100%;
-            /* Ajusta el ancho de la imagen al 100% del contenedor */
-            height: auto;
-            /* Ajusta la altura de la imagen automáticamente */
-            overflow: hidden;
-            /* Aplica overflow hidden */
-        }
-    }
+@media (max-width: 600px) {
+        .imagen-principal{
+            display: none;
+        } 
 }
