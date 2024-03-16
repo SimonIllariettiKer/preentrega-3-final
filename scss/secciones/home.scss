@@ -24,6 +24,10 @@ body {
             height: 600px;
             overflow: hidden;
             margin-top: 100px;
+
+            imagen-suplente {
+                display: none;
+            }
         }
     }
 
@@ -43,7 +47,7 @@ body {
             height: 400px;
             display: flex;
             align-items: center;
-            border:white 9px solid;
+            border: white 9px solid;
 
             .grilla {
                 display: grid;
@@ -106,8 +110,14 @@ body {
 @media (max-width: 767px) {
     .img-principal-index img {
         display: none;
-    //   width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
-    //   height: auto; /* Ajusta la altura de la imagen automáticamente */
-    //   overflow: hidden; /* Aplica overflow hidden */
+
+        .img-suplente {
+            width: 100%;
+            /* Ajusta el ancho de la imagen al 100% del contenedor */
+            height: auto;
+            /* Ajusta la altura de la imagen automáticamente */
+            overflow: hidden;
+            /* Aplica overflow hidden */
+        }
     }
 }
