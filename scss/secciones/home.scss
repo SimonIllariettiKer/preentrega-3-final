@@ -1,5 +1,12 @@
 body {
     @include fondo-index;
+
+    .navbar-toggler {
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+    }
+
     .header-index {
         display: flex;
         justify-content: center;
@@ -26,15 +33,17 @@ body {
         align-items: center;
         margin-top: 100px;
         margin-bottom: 100px;
+        border: red solid 9px;
 
         .main-index {
             margin: 20px;
             padding: 0 0 0 0;
             justify-content: center;
-            width: 819.6px;
+            width: 100vw;
             height: 400px;
             display: flex;
             align-items: center;
+            border:white 9px solid;
 
             .grilla {
                 display: grid;
@@ -84,6 +93,85 @@ body {
 
                     img {
                         width: 560px;
+                        height: 200px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// MEDIA QUERY - MOBILE LAST
+
+@media (max-width:600px) {
+    .sec-main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        border: red solid 9px;
+
+        .main-index {
+            margin: 20px;
+            padding: 0 0 0 0;
+            justify-content: center;
+            width: 100vw;
+            height: 1000px;
+            display: flex;
+            align-items: center;
+            border:white 9px solid;
+
+            .grilla {
+                display: grid;
+                justify-content: center;
+                align-items: center;
+                grid-template-columns: repeat(2, 50%);
+                grid-template-rows: repeat(4, 1fr);
+                height: 2fr;
+                width: 800px;
+                grid-template-areas:
+                    "header header"
+                    "section section"
+                    "article article"
+                    "aside aside";
+
+                header {
+                    grid-area: header;
+                    width: 600px;
+
+                    img {
+                        width: 300px;
+                        height: 200px;
+                    }
+                }
+
+                section {
+                    grid-area: section;
+                    width: 300px;
+
+                    img {
+                        width: 300px;
+                        height: 200px;
+                    }
+                }
+
+                article {
+                    grid-area: article;
+                    width: 300px;
+
+                    img {
+                        width: 300px;
+                        height: 200px;
+                    }
+                }
+
+                aside {
+                    grid-area: aside;
+                    width: 600px;
+
+                    img {
+                        width: 300px;
                         height: 200px;
                     }
                 }

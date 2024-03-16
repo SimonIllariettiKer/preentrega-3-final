@@ -89,6 +89,10 @@ h1 {
 
 body {
   background-image: linear-gradient(black, #00000083, black); }
+  body .navbar-toggler {
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column; }
   body .header-index {
     display: flex;
     justify-content: center;
@@ -108,15 +112,17 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 100px;
-    margin-bottom: 100px; }
+    margin-bottom: 100px;
+    border: red solid 9px; }
     body .sec-main .main-index {
       margin: 20px;
       padding: 0 0 0 0;
       justify-content: center;
-      width: 819.6px;
+      width: 100vw;
       height: 400px;
       display: flex;
-      align-items: center; }
+      align-items: center;
+      border: white 9px solid; }
       body .sec-main .main-index .grilla {
         display: grid;
         justify-content: center;
@@ -150,6 +156,57 @@ body {
           body .sec-main .main-index .grilla aside img {
             width: 560px;
             height: 200px; }
+
+@media (max-width: 600px) {
+  .sec-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border: red solid 9px; }
+    .sec-main .main-index {
+      margin: 20px;
+      padding: 0 0 0 0;
+      justify-content: center;
+      width: 100vw;
+      height: 1000px;
+      display: flex;
+      align-items: center;
+      border: white 9px solid; }
+      .sec-main .main-index .grilla {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(4, 1fr);
+        height: 2fr;
+        width: 800px;
+        grid-template-areas: "header header" "section section" "article article" "aside aside"; }
+        .sec-main .main-index .grilla header {
+          grid-area: header;
+          width: 600px; }
+          .sec-main .main-index .grilla header img {
+            width: 300px;
+            height: 200px; }
+        .sec-main .main-index .grilla section {
+          grid-area: section;
+          width: 300px; }
+          .sec-main .main-index .grilla section img {
+            width: 300px;
+            height: 200px; }
+        .sec-main .main-index .grilla article {
+          grid-area: article;
+          width: 300px; }
+          .sec-main .main-index .grilla article img {
+            width: 300px;
+            height: 200px; }
+        .sec-main .main-index .grilla aside {
+          grid-area: aside;
+          width: 600px; }
+          .sec-main .main-index .grilla aside img {
+            width: 300px;
+            height: 200px; } }
 
 .header-all-valley .navbar {
   height: 110px;
