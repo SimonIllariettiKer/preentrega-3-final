@@ -160,12 +160,7 @@ body {
 
 @media (max-width: 767px) {
   .img-principal-index img {
-    width: 100%;
-    /* Ajusta el ancho de la imagen al 100% del contenedor */
-    height: auto;
-    /* Ajusta la altura de la imagen automáticamente */
-    overflow: hidden;
-    /* Aplica overflow hidden */ } }
+    display: none; } }
 
 .header-all-valley .navbar {
   height: 110px;
