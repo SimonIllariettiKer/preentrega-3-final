@@ -24,15 +24,17 @@
         color: yellow;
         border: yellow 4px solid;
         display: block;
-        justify-content: center;
+        justify-content: end;
+        img {
+            width: 150px;
+            height: 150px;
+            margin-top: 50px;
+            margin-bottom: 150px;
+        }
     }
+    
 
-    img {
-        width: 150px;
-        height: 150px;
-        margin-top: 50px;
-        margin-bottom: 150px;
-    }
+    
 
     h3 {
         margin-top: 32px;
@@ -69,9 +71,78 @@
             list-style: none;
         }
     }
-        .section-eagle-fang-dojo {
-            width: 30%;
+
+    .section-eagle-fang-dojo {
+        width: 30%;
+        height: 1000px;
+        margin: 20px;
+        text-align: center;
+        background-color: red;
+        color: black;
+        border: black 4px solid;
+        display: block;
+        justify-content: center;
+
+        img {
+            width: 150px;
+            height: 150px;
+            margin-top: 50px;
+            margin-bottom: 150px;
+        }
+
+        h3 {
+            margin-top: 32px;
+        }
+
+        li {
+            list-style: none;
+        }
+    }
+}
+
+
+@media(max-width:600px) {
+    .main-dojos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .section-cobrakai-dojo {
+            width: 80%;
             height: 1000px;
+            margin: 20px;
+            text-align: center;
+            background-color: black;
+            color: yellow;
+            border: yellow 4px solid;
+            display: block;
+            justify-content: center;
+            img {
+                width: 150px;
+                height: 150px;
+                margin-top: 50px;
+                margin-bottom: 150px;
+            }
+        }
+        .section-miyagi-do-dojo {
+            width: 80%;
+            height: 900px;
+            margin: 20px;
+            text-align: center;
+            background-color: white;
+            color: orange;
+            border: orange 4px solid;
+            display: block;
+            justify-content: center;
+            img {
+                width: 150px;
+                height: 150px;
+                margin-top: 50px;
+                margin-bottom: 150px;
+            }
+        }
+        .section-eagle-fang-dojo {
+            width: 80%;
+            height: 800px;
             margin: 20px;
             text-align: center;
             background-color: red;
@@ -79,34 +150,12 @@
             border: black 4px solid;
             display: block;
             justify-content: center;
-
-             img {
-                 width: 150px;
-                 height: 150px;
-                 margin-top: 50px;
-                 margin-bottom: 150px;
-             }
-
-            h3 {
-                margin-top: 32px;
-            }
-
-            li {
-                list-style: none;
+            img {
+                width: 150px;
+                height: 150px;
+                margin-top: 50px;
+                margin-bottom: 150px;
             }
         }
     }
-
-
-    @media (max-width: 767px) {
-        .main-dojos {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-        }
-    
-        .main-dojos section {
-          width: 90%;
-          max-width: 1250px; /* Ancho máximo en la vista móvil */
-        }
-      }
+}

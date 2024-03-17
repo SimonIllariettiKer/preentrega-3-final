@@ -579,12 +579,12 @@ body {
     color: yellow;
     border: yellow 4px solid;
     display: block;
-    justify-content: center; }
-  .main-dojos img {
-    width: 150px;
-    height: 150px;
-    margin-top: 50px;
-    margin-bottom: 150px; }
+    justify-content: end; }
+    .main-dojos .section-cobrakai-dojo img {
+      width: 150px;
+      height: 150px;
+      margin-top: 50px;
+      margin-bottom: 150px; }
   .main-dojos h3 {
     margin-top: 32px; }
   .main-dojos li {
@@ -628,15 +628,56 @@ body {
     .main-dojos .section-eagle-fang-dojo li {
       list-style: none; }
 
-@media (max-width: 767px) {
+@media (max-width: 600px) {
   .main-dojos {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center; }
-  .main-dojos section {
-    width: 90%;
-    max-width: 1250px;
-    /* Ancho máximo en la vista móvil */ } }
+    .main-dojos .section-cobrakai-dojo {
+      width: 80%;
+      height: 1000px;
+      margin: 20px;
+      text-align: center;
+      background-color: black;
+      color: yellow;
+      border: yellow 4px solid;
+      display: block;
+      justify-content: center; }
+      .main-dojos .section-cobrakai-dojo img {
+        width: 150px;
+        height: 150px;
+        margin-top: 50px;
+        margin-bottom: 150px; }
+    .main-dojos .section-miyagi-do-dojo {
+      width: 80%;
+      height: 900px;
+      margin: 20px;
+      text-align: center;
+      background-color: white;
+      color: orange;
+      border: orange 4px solid;
+      display: block;
+      justify-content: center; }
+      .main-dojos .section-miyagi-do-dojo img {
+        width: 150px;
+        height: 150px;
+        margin-top: 50px;
+        margin-bottom: 150px; }
+    .main-dojos .section-eagle-fang-dojo {
+      width: 80%;
+      height: 800px;
+      margin: 20px;
+      text-align: center;
+      background-color: red;
+      color: black;
+      border: black 4px solid;
+      display: block;
+      justify-content: center; }
+      .main-dojos .section-eagle-fang-dojo img {
+        width: 150px;
+        height: 150px;
+        margin-top: 50px;
+        margin-bottom: 150px; } }
 
 .main-rivalidades {
   max-width: 800px;
