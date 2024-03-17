@@ -6,23 +6,23 @@
         align-items: center;
         flex-wrap: wrap;
         border: white 9px solid;
-    
+
         img {
             height: 100px;
             width: 100px;
             margin: 10px;
         }
-    
+
         div {
             justify-content: right;
         }
-    
+
         ul {
             display: flex;
             align-items: center;
             justify-content: space-between;
             list-style: none;
-    
+
             li {
                 width: 88px;
                 height: 30px;
@@ -31,17 +31,17 @@
                 align-items: center;
                 justify-content: center;
                 margin: 30px;
-    
+
                 &:hover {
                     background-color: #ffa6005d;
                 }
             }
-    
+
             a {
                 color: aliceblue;
                 text-decoration: none;
                 font-size: 15px;
-    
+
                 &:hover {
                     font-size: 25px;
                     color: black;
@@ -60,7 +60,6 @@
 
 
     .img-all-valley {
-        // border: red solid 5px;
         background-color: #000000c4;
         display: flex;
         justify-content: space-between;
@@ -76,16 +75,16 @@
         p {
             color: white;
             font-size: 20px;
+            border: yellow solid 5px;
         }
     }
-    
+
 }
 
 .main-all-valley {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: transparent;
     margin-top: 75px;
     margin-bottom: 75px;
     height: 200px;
@@ -126,6 +125,7 @@
     width: 95%;
     flex-wrap: wrap;
 
+
     .ul-torneo {
         width: 90%;
         display: flex;
@@ -154,8 +154,8 @@
             align-items: center;
             padding: 10px;
             margin: 20px;
-    
-            h3{
+
+            h3 {
                 font-family: "barak";
                 margin-left: 15px;
                 margin-right: 310px;
@@ -179,7 +179,8 @@
             align-items: center;
             padding: 10px;
             margin: 20px;
-            h3{
+
+            h3 {
                 font-family: "barak";
                 margin-left: 15px;
                 margin-right: 310px;
@@ -203,7 +204,8 @@
             align-items: center;
             padding: 10px;
             margin: 20px;
-            h3{
+
+            h3 {
                 font-family: "barak";
                 margin-left: 15px;
                 margin-right: 310px;
@@ -220,20 +222,147 @@
 }
 
 @media (max-width: 767px) {
+    .img-all-valley {
+        position: relative;
+
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        div {
+            display: none;
+        }
+    }
+
     .main-all-valley {
-        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 75px;
+        margin-bottom: 75px;
+        height: 1800px;
+        margin: 15px;
+
+        .videos {
+            background-color: #000000c4;
+            height: 1600px;
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+
+            video {
+                width: 400px;
+                height: 300px;
+                margin: 20px;
+            }
+        }
+    }
+
+    .div-torneo {
+        display: flex;
+        justify-content: center;
         align-items: center;
     }
 
-    .img-all-valley,
-    .videos,
-    .div-torneo {
-        width: 90%;
-        margin-bottom: 15px;
-    }
+    .campeones-all-valley {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 95%;
+        flex-wrap: wrap;
 
-    .campeones-all-valley li {
-        width: 100%;
-        margin-bottom: 15px;
+        .ul-torneo {
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            .li-cobra-kai {
+                background-color: black;
+                border: 4px solid yellow;
+                width: 90%;
+                color: yellow;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px;
+                margin: 20px;
+
+                h3 {
+                    font-family: "barak";
+                    margin-left: 15px;
+                    margin-right: 10px;
+                }
+
+                img {
+                    width: 100px;
+                    height: 100px;
+                    margin-right: 15px;
+                    margin-left: 100px;
+                }
+                p{
+                    display: none;
+                }
+            }
+            .li-miyagi-do {
+                background-color: white;
+                border: 4px solid orange;
+                width: 90%;
+                color: orange;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px;
+                margin: 20px;
+
+                h3 {
+                    font-family: "barak";
+                    margin-left: 15px;
+                    margin-right: 10px;
+                }
+
+                img {
+                    width: 100px;
+                    height: 100px;
+                    margin-right: 15px;
+                    margin-left: 100px;
+                }
+                p{
+                    display: none;
+                }
+            }
+            .li-xander {
+                background-color: blue;
+                border: 4px solid red;
+                width: 90%;
+                color: red;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px;
+                margin: 20px;
+
+                h3 {
+                    font-family: "barak";
+                    margin-left: 15px;
+                    margin-right: 10px;
+                }
+
+                img {
+                    width: 100px;
+                    height: 100px;
+                    margin-right: 15px;
+                    margin-left: 100px;
+                }
+                p{
+                    display: none;
+                }
+            }
+        }
     }
 }

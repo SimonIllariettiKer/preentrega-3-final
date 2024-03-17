@@ -217,13 +217,13 @@ body {
     margin-left: 20px; }
   .header-all-valley .img-all-valley p {
     color: white;
-    font-size: 20px; }
+    font-size: 20px;
+    border: yellow solid 5px; }
 
 .main-all-valley {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: transparent;
   margin-top: 75px;
   margin-bottom: 75px;
   height: 200px;
@@ -326,17 +326,112 @@ body {
         margin-left: 310px; }
 
 @media (max-width: 767px) {
+  .img-all-valley {
+    position: relative; }
+    .img-all-valley img {
+      display: block;
+      width: 100%;
+      height: auto; }
+    .img-all-valley div {
+      display: none; }
   .main-all-valley {
-    flex-direction: column;
-    align-items: center; }
-  .img-all-valley,
-  .videos,
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 75px;
+    margin-bottom: 75px;
+    height: 1800px;
+    margin: 15px; }
+    .main-all-valley .videos {
+      background-color: #000000c4;
+      height: 1600px;
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .main-all-valley .videos video {
+        width: 400px;
+        height: 300px;
+        margin: 20px; }
   .div-torneo {
-    width: 90%;
-    margin-bottom: 15px; }
-  .campeones-all-valley li {
-    width: 100%;
-    margin-bottom: 15px; } }
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .campeones-all-valley {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    flex-wrap: wrap; }
+    .campeones-all-valley .ul-torneo {
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around; }
+      .campeones-all-valley .ul-torneo .li-cobra-kai {
+        background-color: black;
+        border: 4px solid yellow;
+        width: 90%;
+        color: yellow;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        margin: 20px; }
+        .campeones-all-valley .ul-torneo .li-cobra-kai h3 {
+          font-family: "barak";
+          margin-left: 15px;
+          margin-right: 10px; }
+        .campeones-all-valley .ul-torneo .li-cobra-kai img {
+          width: 100px;
+          height: 100px;
+          margin-right: 15px;
+          margin-left: 100px; }
+        .campeones-all-valley .ul-torneo .li-cobra-kai p {
+          display: none; }
+      .campeones-all-valley .ul-torneo .li-miyagi-do {
+        background-color: white;
+        border: 4px solid orange;
+        width: 90%;
+        color: orange;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        margin: 20px; }
+        .campeones-all-valley .ul-torneo .li-miyagi-do h3 {
+          font-family: "barak";
+          margin-left: 15px;
+          margin-right: 10px; }
+        .campeones-all-valley .ul-torneo .li-miyagi-do img {
+          width: 100px;
+          height: 100px;
+          margin-right: 15px;
+          margin-left: 100px; }
+        .campeones-all-valley .ul-torneo .li-miyagi-do p {
+          display: none; }
+      .campeones-all-valley .ul-torneo .li-xander {
+        background-color: blue;
+        border: 4px solid red;
+        width: 90%;
+        color: red;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        margin: 20px; }
+        .campeones-all-valley .ul-torneo .li-xander h3 {
+          font-family: "barak";
+          margin-left: 15px;
+          margin-right: 10px; }
+        .campeones-all-valley .ul-torneo .li-xander img {
+          width: 100px;
+          height: 100px;
+          margin-right: 15px;
+          margin-left: 100px; }
+        .campeones-all-valley .ul-torneo .li-xander p {
+          display: none; } }
 
 .h1 {
   color: white;
