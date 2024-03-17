@@ -329,13 +329,13 @@ body {
 @media (max-width: 767px) {
   .img-all-valley {
     position: relative;
-    width: 600px;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center; }
     .img-all-valley img {
       display: block;
-      width: 100%;
+      width: 100vw;
       height: auto; }
     .img-all-valley div {
       display: none; }
