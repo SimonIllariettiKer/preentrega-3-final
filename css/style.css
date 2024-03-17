@@ -89,7 +89,9 @@ h1 {
         font-family: "barak"; }
 
 body {
-  background-image: linear-gradient(black, #00000083, black); }
+  background-image: linear-gradient(black, #00000083, black);
+  display: block;
+  justify-content: center; }
   body .navbar-toggler {
     flex-wrap: wrap;
     display: flex;
@@ -113,55 +115,34 @@ body {
         height: 600px;
         overflow: hidden;
         margin-top: 100px; }
-  body .sec-main {
+
+.main-index {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: yellowgreen solid 5px; }
+  .main-index .section-index {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 100px;
-    margin-bottom: 100px; }
-    body .sec-main .main-index {
-      margin: 20px;
-      padding: 0 0 0 0;
-      justify-content: center;
-      width: 100vw;
-      height: 400px;
+    margin-bottom: 50px;
+    width: 70%;
+    height: 600px;
+    background-color: #0000002a;
+    border: white 5px solid; }
+    .main-index .section-index .index-mobile {
       display: flex;
-      align-items: center; }
-      body .sec-main .main-index .grilla {
-        display: grid;
-        justify-content: center;
-        align-items: center;
-        grid-template-columns: repeat(3, 33%);
-        grid-template-rows: repeat(2, 1fr);
-        height: 2fr;
-        width: 800px;
-        grid-template-areas: "header header section" "article aside aside"; }
-        body .sec-main .main-index .grilla header {
-          grid-area: header;
-          width: 600px; }
-          body .sec-main .main-index .grilla header img {
-            width: 600px;
-            height: 200px; }
-        body .sec-main .main-index .grilla section {
-          grid-area: section;
-          width: 300px; }
-          body .sec-main .main-index .grilla section img {
-            width: 300px;
-            height: 200px; }
-        body .sec-main .main-index .grilla article {
-          grid-area: article;
-          width: 300px; }
-          body .sec-main .main-index .grilla article img {
-            width: 300px;
-            height: 200px; }
-        body .sec-main .main-index .grilla aside {
-          grid-area: aside;
-          width: 600px; }
-          body .sec-main .main-index .grilla aside img {
-            width: 560px;
-            height: 200px; }
-  body .section-mobile {
-    display: none; }
+      justify-content: center;
+      align-items: center;
+      width: 66%;
+      height: 1000px;
+      background-color: #000000c4;
+      color: yellow;
+      font-family: sans-serif;
+      padding: 16px;
+      border: blue solid 5px;
+      margin: 0px; }
 
 @media (max-width: 600px) {
   .img-principal-index {
@@ -169,6 +150,7 @@ body {
     height: 600px;
     overflow: hidden;
     margin-top: 75px;
+    margin-bottom: 75px;
     display: flex;
     justify-content: center;
     align-items: center; }
@@ -176,29 +158,15 @@ body {
       display: none; } }
 
 @media (max-width: 600px) {
-  .sec-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 100px;
-    margin-bottom: 100px; }
-    .sec-main .main-index {
-      margin: 5px;
-      width: 100vw;
-      height: 200px;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-      .sec-main .main-index .grilla header {
-        display: none; }
-      .sec-main .main-index .grilla section {
-        display: none; }
-      .sec-main .main-index .grilla article {
-        display: none; }
-      .sec-main .main-index .grilla aside {
-        display: none; }
-      .sec-main .main-index .section-mobile {
-        display: block; } }
+  .index-mobile {
+    width: 66%;
+    height: 300px;
+    background-color: #000000c4;
+    color: yellow;
+    font-family: sans-serif;
+    padding: 16px;
+    margin-top: 30px;
+    overflow: scroll; } }
 
 .header-all-valley .navbar {
   height: 110px;

@@ -1,5 +1,7 @@
 body {
     @include fondo-index;
+    display: block;
+    justify-content: center;
 
     .navbar-toggler {
         flex-wrap: wrap;
@@ -35,80 +37,43 @@ body {
         }
     }
 
-    .sec-main {
+}
+
+.main-index {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: yellowgreen solid 5px;
+
+    .section-index {
         display: flex;
         justify-content: center;
         align-items: center;
         margin-top: 100px;
-        margin-bottom: 100px;
+        margin-bottom: 50px;
+        width: 70%;
+        height: 600px;
+        background-color: #0000002a;
+        border: white 5px solid;
 
-        .main-index {
-            margin: 20px;
-            padding: 0 0 0 0;
-            justify-content: center;
-            width: 100vw;
-            height: 400px;
+        .index-mobile {
             display: flex;
+            justify-content: center;
             align-items: center;
-
-            .grilla {
-                display: grid;
-                justify-content: center;
-                align-items: center;
-                grid-template-columns: repeat(3, 33%);
-                grid-template-rows: repeat(2, 1fr);
-                height: 2fr;
-                width: 800px;
-                grid-template-areas: "header header section"
-                    "article aside aside";
-
-                header {
-                    grid-area: header;
-                    width: 600px;
-
-                    img {
-                        width: 600px;
-                        height: 200px;
-                    }
-                }
-
-                section {
-                    grid-area: section;
-                    width: 300px;
-
-                    img {
-                        width: 300px;
-                        height: 200px;
-                    }
-                }
-
-                article {
-                    grid-area: article;
-                    width: 300px;
-
-                    img {
-                        width: 300px;
-                        height: 200px;
-                    }
-                }
-
-                aside {
-                    grid-area: aside;
-                    width: 600px;
-
-                    img {
-                        width: 560px;
-                        height: 200px;
-                    }
-                }
-            }
+            width: 66%;
+            height: 1000px;
+            background-color: #000000c4;
+            color: yellow;
+            font-family: sans-serif;
+            padding: 16px;
+            border: blue solid 5px;
+            margin: 0px;
         }
     }
-
-    .section-mobile {
-        display: none;
-    }
 }
+
+
+
 
 
 
@@ -121,6 +86,7 @@ body {
         height: 600px;
         overflow: hidden;
         margin-top: 75px;
+        margin-bottom: 75px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -132,42 +98,14 @@ body {
 }
 
 @media (max-width: 600px) {
-    .sec-main {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 100px;
-        margin-bottom: 100px;
-
-        .main-index {
-            margin: 5px;
-            width: 100vw;
-            height: 200px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            .grilla {
-                header {
-                    display: none;
-                }
-
-                section {
-                    display: none;
-                }
-
-                article {
-                    display: none;
-                }
-
-                aside {
-                    display: none;
-                }
-            }
-
-            .section-mobile {
-                display: block;
-            }
-        }
+    .index-mobile {
+        width: 66%;
+        height: 300px;
+        background-color: #000000c4;
+        color: yellow;
+        font-family: sans-serif;
+        padding: 16px;
+        margin-top: 30px;
+        overflow: scroll;
     }
 }
