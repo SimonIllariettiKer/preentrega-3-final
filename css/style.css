@@ -209,14 +209,12 @@ body {
   background-color: #000000c4;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  border: green solid 5px; }
+  align-items: center; }
   .header-all-valley .img-all-valley img {
     width: 500px;
     height: 250px;
     margin-right: 20px;
-    margin-left: 20px;
-    border: gold solid 3px; }
+    margin-left: 20px; }
   .header-all-valley .img-all-valley p {
     color: white;
     font-size: 20px; }
@@ -327,19 +325,24 @@ body {
         margin-left: 310px; }
 
 @media (max-width: 767px) {
-  .img-all-valley {
-    width: 90%;
+  .header-all-valley {
     display: flex;
-    justify-content: end;
+    flex-direction: column;
+    justify-content: center;
     align-items: center; }
-    .img-all-valley img {
+    .header-all-valley .img-all-valley {
       width: 500px;
-      height: 250px;
-      margin-right: 20px;
-      margin-left: 20px;
-      border: gold solid 3px; }
-    .img-all-valley div {
-      display: none; }
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 10px; }
+      .header-all-valley .img-all-valley img {
+        width: 490px;
+        height: 200px;
+        padding: 0;
+        margin: 0; }
+      .header-all-valley .img-all-valley div {
+        display: none; }
   .main-all-valley {
     display: flex;
     justify-content: center;

@@ -62,14 +62,12 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        border: green solid 5px;
 
         img {
             width: 500px;
             height: 250px;
             margin-right: 20px;
             margin-left: 20px;
-            border: gold solid 3px;
         }
 
         p {
@@ -221,24 +219,31 @@
 }
 
 @media (max-width: 767px) {
-    .img-all-valley {
-        // position: relative;
-        width: 90%;
+    .header-all-valley{
         display: flex;
-        justify-content: end;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
-
-        img {
+        .img-all-valley {
+            // position: relative;
             width: 500px;
-            height: 250px;
-            margin-right: 20px;
-            margin-left: 20px;
-            border: gold solid 3px;
-        }
-
-        div {
-            display: none;
-        }
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+    
+            img {
+                width: 490px;
+                height: 200px;
+                padding: 0;
+                margin: 0;
+            }
+    
+            div {
+                display: none;
+            }
+    }
+    
     }
 
     .main-all-valley {
