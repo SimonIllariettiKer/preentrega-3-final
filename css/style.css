@@ -331,12 +331,10 @@ body {
     position: relative;
     width: 100vw;
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center; }
     .img-all-valley img {
-      display: block;
-      width: 100vw;
-      height: auto; }
+      width: 80%; }
     .img-all-valley div {
       display: none; }
   .main-all-valley {
