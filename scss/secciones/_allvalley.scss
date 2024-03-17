@@ -57,25 +57,24 @@
         text-align: center;
     }
 
-
-
     .img-all-valley {
         background-color: #000000c4;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        border: green solid 5px;
 
         img {
             width: 500px;
             height: 250px;
             margin-right: 20px;
             margin-left: 20px;
+            border: gold solid 3px;
         }
 
         p {
             color: white;
             font-size: 20px;
-            border: yellow solid 5px;
         }
     }
 
@@ -224,6 +223,10 @@
 @media (max-width: 767px) {
     .img-all-valley {
         position: relative;
+        width: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         img {
             display: block;

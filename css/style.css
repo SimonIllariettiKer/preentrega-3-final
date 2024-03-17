@@ -209,16 +209,17 @@ body {
   background-color: #000000c4;
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  border: green solid 5px; }
   .header-all-valley .img-all-valley img {
     width: 500px;
     height: 250px;
     margin-right: 20px;
-    margin-left: 20px; }
+    margin-left: 20px;
+    border: gold solid 3px; }
   .header-all-valley .img-all-valley p {
     color: white;
-    font-size: 20px;
-    border: yellow solid 5px; }
+    font-size: 20px; }
 
 .main-all-valley {
   display: flex;
@@ -327,7 +328,11 @@ body {
 
 @media (max-width: 767px) {
   .img-all-valley {
-    position: relative; }
+    position: relative;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
     .img-all-valley img {
       display: block;
       width: 100%;
