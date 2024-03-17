@@ -112,7 +112,7 @@ h1 {
       .nav .section-nav ul {
         display: flex;
         align-items: center;
-        justify-content: right;
+        justify-content: center;
         list-style: none;
         flex-wrap: wrap; }
         .nav .section-nav ul li {
@@ -128,7 +128,8 @@ h1 {
         .nav .section-nav ul a {
           color: black;
           text-decoration: none;
-          font-size: 9px; }
+          font-size: 9px;
+          font-family: "barak"; }
           .nav .section-nav ul a:hover {
             font-size: 25px;
             color: black;
