@@ -41,7 +41,6 @@ body {
         align-items: center;
         margin-top: 100px;
         margin-bottom: 100px;
-        border: red solid 9px;
 
         .main-index {
             margin: 20px;
@@ -51,7 +50,6 @@ body {
             height: 400px;
             display: flex;
             align-items: center;
-            border: white 9px solid;
 
             .grilla {
                 display: grid;
@@ -61,8 +59,7 @@ body {
                 grid-template-rows: repeat(2, 1fr);
                 height: 2fr;
                 width: 800px;
-                grid-template-areas:
-                    "header header section"
+                grid-template-areas: "header header section"
                     "article aside aside";
 
                 header {
@@ -107,13 +104,70 @@ body {
             }
         }
     }
+
+    .section-mobile {
+        display: none;
+    }
 }
+
 
 
 // MEDIA QUERY - MOBILE LAST
 
+// IMG PRINCIPAL
 @media (max-width: 600px) {
-        .imagen-principal{
+    .img-principal-index {
+        width: 80%;
+        height: 600px;
+        overflow: hidden;
+        margin-top: 75px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .imagen-principal {
             display: none;
-        } 
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .sec-main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+        margin-bottom: 100px;
+
+        .main-index {
+            margin: 5px;
+            width: 100vw;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .grilla {
+                header {
+                    display: none;
+                }
+
+                section {
+                    display: none;
+                }
+
+                article {
+                    display: none;
+                }
+
+                aside {
+                    display: none;
+                }
+            }
+
+            .section-mobile {
+                display: block;
+            }
+        }
+    }
 }
