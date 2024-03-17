@@ -119,8 +119,7 @@ body {
 .main-index {
   display: flex;
   justify-content: center;
-  align-items: center;
-  border: yellowgreen solid 5px; }
+  align-items: center; }
   .main-index .section-index {
     display: flex;
     justify-content: center;
@@ -129,8 +128,7 @@ body {
     margin-bottom: 50px;
     width: 90%;
     height: 600px;
-    background-color: #0000002a;
-    border: white 5px solid; }
+    background-color: #0000002a; }
     .main-index .section-index .index-mobile {
       display: flex;
       justify-content: center;
@@ -141,7 +139,6 @@ body {
       color: yellow;
       font-family: sans-serif;
       padding: 16px;
-      border: blue solid 5px;
       margin: 0px; }
 
 @media (max-width: 600px) {

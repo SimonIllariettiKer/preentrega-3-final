@@ -43,7 +43,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: yellowgreen solid 5px;
 
     .section-index {
         display: flex;
@@ -54,7 +53,6 @@ body {
         width: 90%;
         height: 600px;
         background-color: #0000002a;
-        border: white 5px solid;
 
         .index-mobile {
             display: flex;
@@ -66,7 +64,6 @@ body {
             color: yellow;
             font-family: sans-serif;
             padding: 16px;
-            border: blue solid 5px;
             margin: 0px;
         }
     }
