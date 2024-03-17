@@ -156,13 +156,11 @@ body {
 
 @media (max-width: 600px) {
   .index-mobile {
-    width: 66%;
-    height: 300px;
+    width: 85%;
+    height: 600px;
     background-color: #000000c4;
     color: yellow;
     font-family: sans-serif;
-    padding: 16px;
-    margin-top: 30px;
     overflow: scroll; } }
 
 .header-all-valley .navbar {
