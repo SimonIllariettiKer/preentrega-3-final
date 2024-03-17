@@ -118,11 +118,11 @@ h1 {
         .nav .section-nav ul li {
           width: 50px;
           height: 15px;
-          background-color: #ffc800;
+          background-color: yellow;
           display: flex;
           align-items: center;
           justify-content: center;
-          margin: 15px; }
+          margin: 10px; }
           .nav .section-nav ul li:hover {
             background-color: #ffa6005d; }
         .nav .section-nav ul a {
